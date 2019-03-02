@@ -3,5 +3,26 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+  <display-name>Shopping Cart</display-name>
+
+  <servlet>
+      <servlet-name>shopcart</servlet-name>
+      <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Toto</servlet-name>
+  	<display-name>Toto</display-name>
+  	<description></description>
+  	<servlet-class>com.fekladious.shopcart.Toto</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>shopcart</servlet-name>
+    <url-pattern>/api</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Toto</servlet-name>
+  	<url-pattern>/toto</url-pattern>
+  </servlet-mapping>
+
 </web-app>
